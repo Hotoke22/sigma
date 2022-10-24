@@ -1,0 +1,15 @@
+footer {
+  @apply bg-white text-center lg:text-left shadow-md;
+}
+
+footer .content-footer {
+  @apply text-zinc-700 text-center p-4;
+}
+
+.link-repo {
+  @apply hover:text-blue-800 tracking-tight text-lg hover:font-semibold duration-75 ease-in-out;
+}
+
+.bx {
+  @apply text-xl mx-1 items-center justify-center m-auto;
+}

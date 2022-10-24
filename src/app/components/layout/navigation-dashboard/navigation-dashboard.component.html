@@ -1,0 +1,61 @@
+<mat-sidenav-container>
+  <mat-sidenav #drawer class="sidebar" fixedInViewport
+  [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
+  [mode]="(isHandset$ | async) ? 'over' : 'side'"
+  [opened]="(isHandset$ | async) === false">
+    <div class="container-logo">
+      <img class="logo"  src="../../../../assets/img/sigma.svg " alt="">
+    </div>
+    <mat-nav-list class="tablero">
+      <a mat-list-item routerLink="/dashboard" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}" ><span class="icon-navbar material-symbols-outlined">
+        dashboard
+        </span>Dashboard</a>
+    </mat-nav-list>
+    <div class="container-p-modulos">
+      <p>Módulos</p>
+    </div>
+    <mat-nav-list class="navbar">
+      <a mat-list-item routerLink="/clientes">
+        <span class="icon-navbar material-symbols-outlined">
+          person
+        </span>Clientes</a>
+      <a mat-list-item routerLink="/usuarios">
+        <span class="icon-navbar material-symbols-outlined">
+          group
+        </span>Usuarios</a>
+      <a mat-list-item routerLink="/roles-usuario">
+        <span class="icon-navbar material-symbols-outlined">
+          admin_panel_settings
+        </span>Roles Usuario</a>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <mat-toolbar>
+      <button type="button" aria-label="Toggle sidenav" (click)="drawer.toggle()"
+        *ngIf="isHandset$ | async">
+        <span class="icon-top-bar material-symbols-outlined">
+          menu
+        </span>
+      </button>
+      <span class="espaciador"></span>
+      <button>
+        <span class="icon-top-bar material-symbols-outlined">
+          notifications
+        </span>
+      </button>
+      <button>
+        <span class="icon-top-bar material-symbols-outlined">
+          account_circle
+        </span>
+      </button>
+      <button>
+        <span class="icon-top-bar material-symbols-outlined">
+          settings
+        </span>
+      </button>
+        </mat-toolbar>
+        <div class="dashboard-content">
+          <router-outlet></router-outlet>
+        </div>
+  </mat-sidenav-content>
+</mat-sidenav-container>
