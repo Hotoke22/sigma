@@ -1,27 +1,27 @@
-# Client
+# MEAN STACK - (MongoDB Express Angular Node JS)
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.6.
+## ¿Qué es un STACK?
 
-## Development server
+Un ***Stack*** de desarrollo es un grupo de herramientas y tecnológias que se utilizan en conjunto para el desarrollo de aplicaciones web. Es decir, son los lenguajes de programación, bibliotecas, framework, servidores y herramientas utilizadas por los desarrolladores web. El ***MEAN STACK*** sólo utiliza ***tecnológias relacionadas*** con Javascript.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Estructura de  carpetas
 
-## Code scaffolding
+* **app:** Es la sección donde se ubica o encuentra todo aquello que siempre si o si se debe cargar y que se necesita para que la aplicación corra de forma correcta.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* **auth:** Es la sección donde se ubica o encuentra todas las rutas relacionadas con la Autenticación de usuarios, contine los ***Guards***; **middlewares** que se ejecutan antes de cargar una ruta y determinan si se puede cargar dicha ruta o no. Existen 4 tipos diferentes de Guards (o combinaciones de estos) que son los siguientes:
 
-## Build
+  1. (CanActivate) Antes de cargar los componentes de la ruta.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  1. (CanLoad) Antes de cargar los recursos (assets) de la ruta.
 
-## Running unit tests
+  1. (CanDeactivate) Antes de intentar salir de la ruta actual (usualmente utilizado para evitar salir de una ruta, si no se han guardado los datos).
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+  1. (CanActivateChild) Antes de cargar las rutas hijas de la ruta actual.
 
-## Running end-to-end tests
+* **components:** Es la sección donde se ubican o encuentran componentes, widgets, servicios que no tienen que ver con datos, enfocados más a transformarlos, y pipes.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+* **modules:** En esta sección se ubican todo los módulos que ayudaran a estructurar la aplicación, tales como modulos de authenticación, modulos de registro, login, y  módulos propios de negocio.
 
-## Further help
+* **layout:** Hubicaremos la estructura visual del proyecto, tales como header, footer, sidebar, etc. Esta sección puede hubicarse en shared (Si se crea), pero es una sección viable para diferenciar ente componentes y elementos que dan estructura visual al proyecto.
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+* **services:** En esta sección se ubican todo los servicios que ayudaran a conectar e interacturar con nuestro backend.
