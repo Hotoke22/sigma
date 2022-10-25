@@ -15,6 +15,7 @@ import { FooterComponent } from './components/layout/footer/footer.component';
 import { FooterDashboardComponent } from './components/layout/footer-dashboard/footer-dashboard.component';
 import { NavigationDashboardComponent } from './components/layout/navigation-dashboard/navigation-dashboard.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BodyDashboardComponent } from './components/layout/body-dashboard/body-dashboard.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     HeaderComponent,
     FooterComponent,
     FooterDashboardComponent,
-    NavigationDashboardComponent
+    NavigationDashboardComponent,
+    BodyDashboardComponent
   ],
   imports: [
     BrowserModule,

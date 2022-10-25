@@ -1,3 +1,4 @@
+<!--
 <mat-sidenav-container>
   <mat-sidenav #drawer class="sidebar" fixedInViewport
   [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
@@ -59,3 +60,26 @@
         </div>
   </mat-sidenav-content>
 </mat-sidenav-container>
+-->
+
+<div class="sidebar" [ngClass]=" collapsed ? 'sidebar-collapsed': ''">
+  <div class="container-logo">
+    <button class="logo" (click)="toggleCollapse()">S</button>
+    <button class="logo-text" *ngIf="collapsed">Sigma</button>
+    <button class="btn-close" *ngIf="collapsed" (click)="closeSidebar()">
+      <span class="close material-symbols-outlined">
+        close
+      </span>
+    </button>
+  </div>
+  <ul class="sidebar-nav">
+    <li class="sidebar-nav-item" *ngFor="let data of navData">
+      <a href="" class="sidebar-nav-link" [routerLink]="[data.routeLink]">
+        <span class="nav-icon material-symbols-outlined">
+          dashboard
+        </span>
+        <span class="sidebar-link-text" *ngIf="collapsed">{{data.label}}</span>
+      </a>
+    </li>
+  </ul>
+</div>

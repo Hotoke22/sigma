@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap");
 
+/*
 .espaciador {
   @apply flex-auto;
 }
@@ -59,4 +60,57 @@ mat-nav-list a {
 
 .icon-navbar {
   @apply fill-current mr-2;
+}
+*/
+
+.sidebar {
+  @apply bg-blue-800 transition-all duration-500 ease-in-out fixed z-10 top-0 w-20 h-screen shadow-lg shadow-blue-900;
+}
+
+.container-logo {
+  @apply flex items-center px-4 py-4 w-full;
+}
+
+.logo {
+  @apply bg-white items-center w-12 min-w-min p-1 rounded-sm text-xl font-black cursor-pointer border-none;
+}
+
+.logo-text {
+  @apply ml-6 text-xl font-bold text-white;
+}
+
+.btn-close {
+  @apply ml-auto cursor-pointer w-8 h-8 rounded-sm bg-transparent border-none;
+}
+
+.close {
+  @apply text-white text-2xl;
+}
+
+.sidebar-collapsed {
+  @apply w-64;
+}
+
+.sidebar-nav {
+  @apply flex flex-col list-none p-3 m-auto  items-center h-[calc(100vh-3.65rem)] cursor-pointer;
+}
+
+.sidebar-nav-item {
+  @apply w-full items-center mb-3;
+}
+
+.sidebar-nav-link {
+  @apply flex items-center justify-center h-12 text-base font-poppins font-medium leading-tight  text-white no-underline transition-all duration-200 ease-in-out rounded-md;
+}
+
+.nav-icon {
+  @apply flex px-0 items-center justify-center  text-2xl  min-w-min mx-0;
+}
+
+a .sidebar-link-text {
+  @apply flex pl-2 items-center;
+}
+
+.sidebar-nav-link:hover {
+  @apply bg-white text-blue-800;
 }
