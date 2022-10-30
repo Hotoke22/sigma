@@ -6,3 +6,6 @@ export * from './usuario-mascotas.controller';
 export * from './mascotas-usuario.controller';
 export * from './mascotas-plan.controller';
 export * from './plan-mascotas.controller';
+export * from './sucursal.controller';
+export * from './prospecto.controller';
+export * from './productos-servicios.controller';
