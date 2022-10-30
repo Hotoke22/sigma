@@ -4,7 +4,7 @@ import {juggler} from '@loopback/repository';
 const config = {
   name: 'SigmaDB',
   connector: 'mongodb',
-  url: 'mongodb+srv://DevLabAdmin:RhfmGgTAWDI7jQU7@clusterwebdev.1870jnn.mongodb.net/SigmaDB?retryWrites=true&w=majority',
+  url: 'mongodb+srv://DevLabAdmin:RhfmGgTAWDI7jQU7@clusterwebdev.1870jnn.mongodb.net/SigmaMainDB',
   host: '',
   port: 0,
   user: '',
