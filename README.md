@@ -217,6 +217,6 @@ Investigando o indagando sobre tecnologias modernas; la aplicación se puede emp
 Pueden consultar más información en  [Implementar la aplicación como microservicios nativos en la nube](https://github.com/loopbackio/loopback4-example-shopping/blob/master/kubernetes/README.md)
 
 
-***En contrucción...***
+***En construcción...***
 
 
