@@ -55,6 +55,7 @@
     "@loopback/rest-explorer": "^5.0.4",
     "@loopback/security": "^0.8.4",
     "@loopback/service-proxy": "^5.0.4",
+    "bcrypt": "^5.1.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.0.3",
     "i": "^0.3.7",

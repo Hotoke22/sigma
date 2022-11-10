@@ -32,10 +32,18 @@ El siguiente ejemplo muestra el uso básico del @authorizedecorador, el autoriza
 
 ASUMIENDO que su aplicación utiliza jwt como estrategia de autenticación y que la información del usuario está codificada en el token del encabezado de una solicitud.
 
-$ npm install isemail
-$ npm install bcryptjs
+`$ npm install isemail`
+
+Determina si el correo electrónico es válido o no, para diversas definiciones del mismo. Opcionalmente acepta un options objet. Las opciones pueden incluir errorLevel.
+
+Se puede usar el error level para especificar el tipo de resultado para validate(). Pasar un false literal dará como resultado un booleano verdadero o falso que indica si la dirección de correo electrónico está suficientemente definida para usarla al enviar un correo electrónico.
+
+Pasar un true literal dará como resultado un estado numérico más granular, siendo 0 una dirección de correo electrónico perfectamente válida.
+
+```npm
 $ npm install jsonwebtoken
 $ npm i -D @types/bcryptjs
+```
 
 ## Instalación
 
@@ -63,6 +71,26 @@ npm i
 **8. Service -** Representa una entidad para los servicios ofrecidos por Mascota Feliz  
 **9. Prospect -** Representa una entidad para identidicar y facilitar el contacto de los clientes potenciales.
 
-**User** y **Pet**  se marcan de 1 a muchos utilizando el decorador de modelo **@HasMany** porque un cliente puede tener muchas mascotas y como **Pet** perteneciente a **User** utilizando el decorador de modelo **@BelongsTo**
+**User** y **Pet**  se marcan de 1 a muchos utilizando el decorador de modelo **@HasMany** porque un cliente puede tener muchas mascotas y como **Pet** perteneciente a **User** utilizando el decorador de modelo **@BelongsTo**.
+
+**User** y **UserCredentials**  se marcan de 1 a 1 utilizando el decorador de modelo **@HasOne** porque un cliente puede tener una sola credencial de autenticación.
+
+**Pet** y **Plan**  se marcan de 1 a 1 utilizando el decorador de modelo **@HasOne** porque una mascota puede tener o adquirir un solo plan.
+
+
+
+## Controladores
+
+**1. user-management -** Controlador para crear, obtener información, actualizar información de usuarios e iniciar sesión.
+
+**2. Product -** Controller para la gestión del catálogo de productos.
+
+**3. Service -** Controller para la gestión del catálogo de servicios.
+
+**4. Pet -** Controlador para crear, obtener información, actualizar información de las mascotas.
+
+**5. Plan -** Controlador para crear, obtener información, actualizar información de las mascotas.
 
 ***En contrucción...***
+
+
