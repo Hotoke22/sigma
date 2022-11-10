@@ -77,19 +77,35 @@ npm i
 
 **Pet** y **Plan**  se marcan de 1 a 1 utilizando el decorador de modelo **@HasOne** porque una mascota puede tener o adquirir un solo plan.
 
-
-
 ## Controladores
 
 **1. user-management -** Controlador para crear, obtener información, actualizar información de usuarios e iniciar sesión.
 
-**2. Product -** Controller para la gestión del catálogo de productos.
+**2. product -** Controller para la gestión del catálogo de productos.
 
-**3. Service -** Controller para la gestión del catálogo de servicios.
+**3. service -** Controller para la gestión del catálogo de servicios.
 
-**4. Pet -** Controlador para crear, obtener información, actualizar información de las mascotas.
+**4. pet -** Controlador para crear, obtener información, actualizar información de las mascotas.
 
-**5. Plan -** Controlador para crear, obtener información, actualizar información de las mascotas.
+**5. plan -** Controlador para crear, obtener información, actualizar información de las mascotas.
+
+**6. prospect -** Controlador para crear y obtener información sobre los prospectos de usuarios potenciales.
+
+**7. branch -** Controlador para crear, obtener información, actualizar información de las sucursales.
+
+## Servicios
+
+**1. user-management -** Este servicio es el responsable de verificar si el usuario existe y la contraseña enviada al servidor coincide con la de un usuario existente.
+
+**2. hash.password.bcryptjs -** Este servicio es el responsable de generar y comparar los hashes de las contraseñas.
+
+**3. validator -** Este servicio es el responsable de válidar el correo electrónico y la contraseña cuando se crea o registra un nuevo usuario.
+
+**4. jwt -** Este servicio es el responsable de generar y verificar  los JSON Web Token.
+
+**5. email -** Este servicio es el responsable de enviar el correo electrónico de restablecimiento de contraseña.
+
+**6. basic-authorizor -** Este servicio es el responsable de  autorizar y negar accesos.
 
 ***En contrucción...***
 
