@@ -182,7 +182,7 @@ export class UserManagementController {
   })
   @authenticate('jwt')
   @authorize({
-    allowedRoles: ['admin', 'soporte', 'cliente'],
+    allowedRoles: ['admin', 'soporte', 'asesor', 'cliente'],
     voters: [basicAuthorization],
   })
   async findById(@param.path.string('userId') userId: string): Promise<User> {
