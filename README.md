@@ -2,7 +2,7 @@
 
 ## Pre-requisitos
 
-Se requiere Node.js >= 18.12 y ejecutar instancias de un servidor MongoDB (Mongodb Atlas) para que la aplicación se inicie. MongoDB se usa para la base de datos de los modelos de la aplicación.
+Se requiere Node.js == 18.12 y ejecutar instancias de un servidor MongoDB (Mongodb Atlas) para que la aplicación se inicie. MongoDB se usa para la base de datos de los modelos de la aplicación.
 
 ## Instalación
 
